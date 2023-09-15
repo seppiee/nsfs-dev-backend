@@ -81,7 +81,7 @@
     "manual_date": {
       "pluginOptions": {
         "i18n": {
-          "localized": true
+          "localized": false
         }
       },
       "type": "date"
