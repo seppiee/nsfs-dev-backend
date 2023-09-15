@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_singlepage_components_boardmembers_lists",
+  "info": {
+    "displayName": "Contact List",
+    "icon": "alien",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "phone_primary": {
+      "type": "string"
+    },
+    "phone_secondary": {
+      "type": "string"
+    },
+    "function": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "photo_portrait": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    }
+  }
+}

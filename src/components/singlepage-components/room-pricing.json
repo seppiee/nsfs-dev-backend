@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_singlepage_components_room_pricings",
+  "info": {
+    "displayName": "Room Pricing",
+    "icon": "handHeart"
+  },
+  "options": {},
+  "attributes": {
+    "day_type": {
+      "type": "string"
+    },
+    "timeframe_start": {
+      "type": "time"
+    },
+    "timeframe_end": {
+      "type": "time"
+    },
+    "price_per_day": {
+      "type": "integer"
+    }
+  }
+}

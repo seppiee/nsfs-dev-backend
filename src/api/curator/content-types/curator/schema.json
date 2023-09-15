@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "curators",
+  "info": {
+    "singularName": "curator",
+    "pluralName": "curators",
+    "displayName": "Curators",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "date_birth": {
+      "type": "date"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "last_name"
+    },
+    "rel_exhibitions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::exhibition.exhibition",
+      "inversedBy": "rel_curators"
+    }
+  }
+}

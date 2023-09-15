@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_global_components_planned_events",
+  "info": {
+    "displayName": "Planned Events",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "url": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "time_start": {
+      "type": "time"
+    },
+    "time_end": {
+      "type": "time"
+    }
+  }
+}

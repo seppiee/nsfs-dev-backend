@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_singlepage_components_lounge_exhibitions_lists",
+  "info": {
+    "displayName": "Lounge Exhibitions List",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "date_start": {
+      "type": "date"
+    },
+    "date_end": {
+      "type": "date"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "photo_cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "photo_gallery": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

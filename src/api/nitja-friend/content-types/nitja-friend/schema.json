@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "nitja_friends",
+  "info": {
+    "singularName": "nitja-friend",
+    "pluralName": "nitja-friends",
+    "displayName": "Nitja Friends"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    },
+    "photo_cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
+    },
+    "boardmembers": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "singlepage-components.boardmembers-list"
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_singlepage_components_act_lists",
+  "info": {
+    "displayName": "Act List",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "rel_exh": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::exhibition.exhibition"
+    },
+    "rel_act_c": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::activity-category.activity-category"
+    },
+    "content_short": {
+      "type": "text"
+    },
+    "type": {
+      "type": "string"
+    },
+    "schoolyear": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "photo_cover": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

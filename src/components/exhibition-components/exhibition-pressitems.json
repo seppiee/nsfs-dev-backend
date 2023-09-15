@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_exhibition_components_exhibition_pressitems",
+  "info": {
+    "displayName": "Exhibition Pressitems",
+    "icon": "envelop"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "date_published": {
+      "type": "date"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

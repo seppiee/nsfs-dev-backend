@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_singlepage_components_press_archive_lists",
+  "info": {
+    "displayName": "Press Archive List",
+    "icon": "archive"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "published_date": {
+      "type": "date"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

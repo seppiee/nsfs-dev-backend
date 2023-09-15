@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_global_components_annual_files",
+  "info": {
+    "displayName": "Annual Files",
+    "icon": "server"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "integer"
+    },
+    "file": {
+      "allowedTypes": [
+        "images",
+        "videos",
+        "audios",
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

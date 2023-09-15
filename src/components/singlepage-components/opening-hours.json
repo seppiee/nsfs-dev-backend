@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_singlepage_components_opening_hours",
+  "info": {
+    "displayName": "Opening Hours",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "day": {
+      "type": "string"
+    },
+    "time_open": {
+      "type": "time"
+    },
+    "time_closed": {
+      "type": "time"
+    }
+  }
+}

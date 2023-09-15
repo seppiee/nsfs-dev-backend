@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_global_components_key_value_lists",
+  "info": {
+    "displayName": "Key Value list",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "key": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "activity_categories",
+  "info": {
+    "singularName": "activity-category",
+    "pluralName": "activity-categories",
+    "displayName": "Activity Categories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "name": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "rel_activities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::activity.activity",
+      "mappedBy": "rel_activity_category"
+    }
+  }
+}
