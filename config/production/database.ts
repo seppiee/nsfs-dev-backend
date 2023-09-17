@@ -11,3 +11,6 @@ export default ({ env }) => ({
     },
   },
 });
+
+
+console.log('Database Name:', env('DATABASE_PROD_NAME'));
