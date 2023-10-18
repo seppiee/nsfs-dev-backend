@@ -1,6 +1,14 @@
 module.exports = ({env}) => ({
     upload: {
         config: {
+            endpoint: "/graphql",
+            shadowCRUD: true,
+            playgroundAlways: true,
+            defaultLimit: 10,
+            maxLimit: 20,
+            apolloServer: {
+                tracing: true,
+            },
             provider: 'aws-s3',
             providerOptions: {
                 accessKeyId: env('DO_SPACE_ACCESS_KEY'),
