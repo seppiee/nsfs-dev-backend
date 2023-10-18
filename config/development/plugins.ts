@@ -11,6 +11,7 @@ module.exports = ({env}) => ({
             tracing: true,
           },
         },
+    },
     upload: {
         config: {
             provider: 'aws-s3',
