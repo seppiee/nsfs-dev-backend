@@ -37,16 +37,6 @@
         }
       }
     },
-    "basic": {
-      "type": "component",
-      "repeatable": true,
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "component": "ticket-components.basic-tickets"
-    },
     "special": {
       "type": "component",
       "repeatable": true,
@@ -56,6 +46,16 @@
         }
       },
       "component": "ticket-components.special-tickets"
+    },
+    "tickets": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "ticket-components.ticket-types"
     }
   }
 }

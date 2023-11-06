@@ -2756,13 +2756,13 @@ export interface ApiTicketPageTicketPage extends Schema.SingleType {
           localized: false;
         };
       }>;
-    basic: Attribute.Component<'ticket-components.basic-tickets', true> &
+    special: Attribute.Component<'ticket-components.special-tickets', true> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    special: Attribute.Component<'ticket-components.special-tickets', true> &
+    tickets: Attribute.Component<'ticket-components.ticket-types', true> &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
