@@ -215,11 +215,13 @@ export interface TicketComponentsBasicTickets extends Schema.Component {
   info: {
     displayName: 'Basic Tickets';
     icon: 'bulletList';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
     price: Attribute.Integer;
     hex_color: Attribute.String;
+    extra_info: Attribute.String;
   };
 }
 
