@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_ticket_components_ticket_types",
+  "info": {
+    "displayName": "Ticket Types",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "type": {
+      "type": "string"
+    },
+    "tickets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ticket-components.basic-tickets"
+    }
+  }
+}

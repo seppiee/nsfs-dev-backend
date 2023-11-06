@@ -210,6 +210,57 @@ export interface SinglepageComponentsRoomTypes extends Schema.Component {
   };
 }
 
+export interface TicketComponentsBasicTickets extends Schema.Component {
+  collectionName: 'components_ticket_components_basic_tickets';
+  info: {
+    displayName: 'Basic Tickets';
+    icon: 'bulletList';
+  };
+  attributes: {
+    name: Attribute.String;
+    price: Attribute.Integer;
+    hex_color: Attribute.String;
+  };
+}
+
+export interface TicketComponentsSpecialPerks extends Schema.Component {
+  collectionName: 'components_ticket_components_special_perks';
+  info: {
+    displayName: 'Special Perks';
+    icon: 'database';
+  };
+  attributes: {
+    content: Attribute.String;
+  };
+}
+
+export interface TicketComponentsSpecialTickets extends Schema.Component {
+  collectionName: 'components_ticket_components_special_tickets';
+  info: {
+    displayName: 'Special Tickets';
+    icon: 'crown';
+    description: '';
+  };
+  attributes: {
+    name: Attribute.String;
+    button_txt: Attribute.String;
+    description: Attribute.Text;
+    perks: Attribute.Component<'ticket-components.special-perks', true>;
+  };
+}
+
+export interface TicketComponentsTicketTypes extends Schema.Component {
+  collectionName: 'components_ticket_components_ticket_types';
+  info: {
+    displayName: 'Ticket Types';
+    icon: 'database';
+  };
+  attributes: {
+    type: Attribute.String;
+    tickets: Attribute.Component<'ticket-components.basic-tickets', true>;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface Components {
@@ -226,6 +277,10 @@ declare module '@strapi/types' {
       'singlepage-components.press-archive-list': SinglepageComponentsPressArchiveList;
       'singlepage-components.room-pricing': SinglepageComponentsRoomPricing;
       'singlepage-components.room-types': SinglepageComponentsRoomTypes;
+      'ticket-components.basic-tickets': TicketComponentsBasicTickets;
+      'ticket-components.special-perks': TicketComponentsSpecialPerks;
+      'ticket-components.special-tickets': TicketComponentsSpecialTickets;
+      'ticket-components.ticket-types': TicketComponentsTicketTypes;
     }
   }
 }

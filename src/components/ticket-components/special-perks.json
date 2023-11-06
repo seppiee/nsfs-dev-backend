@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_ticket_components_special_perks",
+  "info": {
+    "displayName": "Special Perks",
+    "icon": "database"
+  },
+  "options": {},
+  "attributes": {
+    "content": {
+      "type": "string"
+    }
+  }
+}

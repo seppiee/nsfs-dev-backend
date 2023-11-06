@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_ticket_components_special_tickets",
+  "info": {
+    "displayName": "Special Tickets",
+    "icon": "crown",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "button_txt": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "perks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ticket-components.special-perks"
+    }
+  }
+}

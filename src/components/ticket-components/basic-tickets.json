@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_ticket_components_basic_tickets",
+  "info": {
+    "displayName": "Basic Tickets",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "hex_color": {
+      "type": "string"
+    }
+  }
+}

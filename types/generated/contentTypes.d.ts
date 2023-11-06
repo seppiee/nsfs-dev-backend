@@ -2727,6 +2727,71 @@ export interface ApiStorePageStorePage extends Schema.SingleType {
   };
 }
 
+export interface ApiTicketPageTicketPage extends Schema.SingleType {
+  collectionName: 'ticket_pages';
+  info: {
+    singularName: 'ticket-page';
+    pluralName: 'ticket-pages';
+    displayName: 'Ticket Page';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    content: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    photo_cover: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    basic: Attribute.Component<'ticket-components.basic-tickets', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    special: Attribute.Component<'ticket-components.special-tickets', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::ticket-page.ticket-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::ticket-page.ticket-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::ticket-page.ticket-page',
+      'oneToMany',
+      'api::ticket-page.ticket-page'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiVisionPageVisionPage extends Schema.SingleType {
   collectionName: 'vision_pages';
   info: {
@@ -2816,6 +2881,7 @@ declare module '@strapi/types' {
       'api::publication.publication': ApiPublicationPublication;
       'api::store-exhibition.store-exhibition': ApiStoreExhibitionStoreExhibition;
       'api::store-page.store-page': ApiStorePageStorePage;
+      'api::ticket-page.ticket-page': ApiTicketPageTicketPage;
       'api::vision-page.vision-page': ApiVisionPageVisionPage;
     }
   }
