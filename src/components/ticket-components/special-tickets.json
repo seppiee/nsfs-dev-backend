@@ -20,6 +20,12 @@
       "type": "component",
       "repeatable": true,
       "component": "ticket-components.special-perks"
+    },
+    "price": {
+      "type": "richtext"
+    },
+    "url": {
+      "type": "string"
     }
   }
 }
