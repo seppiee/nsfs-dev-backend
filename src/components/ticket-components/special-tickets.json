@@ -21,9 +21,6 @@
       "repeatable": true,
       "component": "ticket-components.special-perks"
     },
-    "price": {
-      "type": "richtext"
-    },
     "url": {
       "type": "string"
     },
@@ -31,6 +28,9 @@
       "type": "boolean"
     },
     "sale_price": {
+      "type": "integer"
+    },
+    "price": {
       "type": "integer"
     }
   }

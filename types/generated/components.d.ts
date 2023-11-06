@@ -248,10 +248,10 @@ export interface TicketComponentsSpecialTickets extends Schema.Component {
     button_txt: Attribute.String;
     description: Attribute.Text;
     perks: Attribute.Component<'ticket-components.special-perks', true>;
-    price: Attribute.RichText;
     url: Attribute.String;
     sale: Attribute.Boolean;
     sale_price: Attribute.Integer;
+    price: Attribute.Integer;
   };
 }
 
