@@ -32,6 +32,9 @@
     },
     "price": {
       "type": "integer"
+    },
+    "sale_txt": {
+      "type": "string"
     }
   }
 }

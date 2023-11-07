@@ -252,6 +252,7 @@ export interface TicketComponentsSpecialTickets extends Schema.Component {
     sale: Attribute.Boolean;
     sale_price: Attribute.Integer;
     price: Attribute.Integer;
+    sale_txt: Attribute.String;
   };
 }
 
