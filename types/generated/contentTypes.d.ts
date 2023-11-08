@@ -2433,30 +2433,6 @@ export interface ApiPublicSpacePagePublicSpacePage extends Schema.SingleType {
           localized: true;
         };
       }>;
-    pricing_text: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    other_rentals: Attribute.String &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    rooms: Attribute.Component<'singlepage-components.room-types', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
-    pricing: Attribute.Component<'singlepage-components.room-pricing', true> &
-      Attribute.SetPluginOptions<{
-        i18n: {
-          localized: true;
-        };
-      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -2576,6 +2552,76 @@ export interface ApiPublicationPublication extends Schema.CollectionType {
       'api::publication.publication',
       'oneToMany',
       'api::publication.publication'
+    >;
+    locale: Attribute.String;
+  };
+}
+
+export interface ApiRentalPageRentalPage extends Schema.SingleType {
+  collectionName: 'rental_pages';
+  info: {
+    singularName: 'rental-page';
+    pluralName: 'rental-pages';
+    displayName: 'Rental Page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    content: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    pricing_txt: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    other_txt: Attribute.RichText &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    rooms: Attribute.Component<'singlepage-components.room-types', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    pricing: Attribute.Component<'singlepage-components.room-pricing', true> &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::rental-page.rental-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::rental-page.rental-page',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::rental-page.rental-page',
+      'oneToMany',
+      'api::rental-page.rental-page'
     >;
     locale: Attribute.String;
   };
@@ -2879,6 +2925,7 @@ declare module '@strapi/types' {
       'api::privacy-page.privacy-page': ApiPrivacyPagePrivacyPage;
       'api::public-space-page.public-space-page': ApiPublicSpacePagePublicSpacePage;
       'api::publication.publication': ApiPublicationPublication;
+      'api::rental-page.rental-page': ApiRentalPageRentalPage;
       'api::store-exhibition.store-exhibition': ApiStoreExhibitionStoreExhibition;
       'api::store-page.store-page': ApiStorePageStorePage;
       'api::ticket-page.ticket-page': ApiTicketPageTicketPage;
