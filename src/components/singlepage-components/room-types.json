@@ -2,18 +2,19 @@
   "collectionName": "components_singlepage_components_room_types",
   "info": {
     "displayName": "Room Types",
-    "icon": "apps"
+    "icon": "apps",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "content_short": {
-      "type": "text"
-    },
     "capacity": {
       "type": "integer"
+    },
+    "content_short": {
+      "type": "richtext"
     }
   }
 }

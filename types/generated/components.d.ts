@@ -202,11 +202,12 @@ export interface SinglepageComponentsRoomTypes extends Schema.Component {
   info: {
     displayName: 'Room Types';
     icon: 'apps';
+    description: '';
   };
   attributes: {
     name: Attribute.String;
-    content_short: Attribute.Text;
     capacity: Attribute.Integer;
+    content_short: Attribute.RichText;
   };
 }
 
