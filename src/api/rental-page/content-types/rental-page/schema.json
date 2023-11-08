@@ -4,7 +4,8 @@
   "info": {
     "singularName": "rental-page",
     "pluralName": "rental-pages",
-    "displayName": "Rental Page"
+    "displayName": "Rental Page",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -58,6 +59,33 @@
         }
       },
       "component": "singlepage-components.room-pricing"
+    },
+    "photo_gallery": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
+    },
+    "photo_cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      }
     }
   }
 }

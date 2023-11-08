@@ -2563,6 +2563,7 @@ export interface ApiRentalPageRentalPage extends Schema.SingleType {
     singularName: 'rental-page';
     pluralName: 'rental-pages';
     displayName: 'Rental Page';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -2601,6 +2602,18 @@ export interface ApiRentalPageRentalPage extends Schema.SingleType {
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
+        };
+      }>;
+    photo_gallery: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
+    photo_cover: Attribute.Media &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
         };
       }>;
     createdAt: Attribute.DateTime;
