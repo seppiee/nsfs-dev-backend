@@ -125,6 +125,16 @@
         }
       },
       "component": "global-components.annual-files"
+    },
+    "lang_txts": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "singlepage-components.multilingual-list"
     }
   }
 }

@@ -1578,6 +1578,15 @@ export interface ApiInfoPageInfoPage extends Schema.SingleType {
           localized: true;
         };
       }>;
+    lang_txts: Attribute.Component<
+      'singlepage-components.multilingual-list',
+      true
+    > &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

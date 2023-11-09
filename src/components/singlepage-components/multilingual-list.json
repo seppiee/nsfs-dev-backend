@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_singlepage_components_multilingual_lists",
+  "info": {
+    "displayName": "Multilingual List",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "countrycode": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    }
+  }
+}

@@ -155,6 +155,18 @@ export interface SinglepageComponentsLoungeExhibitionsList
   };
 }
 
+export interface SinglepageComponentsMultilingualList extends Schema.Component {
+  collectionName: 'components_singlepage_components_multilingual_lists';
+  info: {
+    displayName: 'Multilingual List';
+    icon: 'bulletList';
+  };
+  attributes: {
+    countrycode: Attribute.String;
+    content: Attribute.RichText;
+  };
+}
+
 export interface SinglepageComponentsOpeningHours extends Schema.Component {
   collectionName: 'components_singlepage_components_opening_hours';
   info: {
@@ -281,6 +293,7 @@ declare module '@strapi/types' {
       'singlepage-components.boardmembers-list': SinglepageComponentsBoardmembersList;
       'singlepage-components.collaborator-list': SinglepageComponentsCollaboratorList;
       'singlepage-components.lounge-exhibitions-list': SinglepageComponentsLoungeExhibitionsList;
+      'singlepage-components.multilingual-list': SinglepageComponentsMultilingualList;
       'singlepage-components.opening-hours': SinglepageComponentsOpeningHours;
       'singlepage-components.press-archive-list': SinglepageComponentsPressArchiveList;
       'singlepage-components.room-pricing': SinglepageComponentsRoomPricing;
