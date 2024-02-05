@@ -1746,6 +1746,7 @@ export interface ApiNitjaKidNitjaKid extends Schema.SingleType {
     singularName: 'nitja-kid';
     pluralName: 'nitja-kids';
     displayName: 'Nitja Kids';
+    description: '';
   };
   options: {
     draftAndPublish: true;

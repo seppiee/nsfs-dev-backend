@@ -4,7 +4,8 @@
   "info": {
     "singularName": "nitja-kid",
     "pluralName": "nitja-kids",
-    "displayName": "Nitja Kids"
+    "displayName": "Nitja Kids",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -32,11 +33,12 @@
       "type": "text"
     },
     "photo_cover": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
       ],
-      "type": "media",
-      "multiple": true,
       "pluginOptions": {
         "i18n": {
           "localized": true
